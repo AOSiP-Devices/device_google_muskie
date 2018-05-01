@@ -2,15 +2,14 @@
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-
-# Inherit halogenOS product configuration
-$(call inherit-product, vendor/xos/config/common.mk)
+# Inherit AOSiP product configuration
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/muskie/aosp_walleye.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := XOS_walleye
+PRODUCT_NAME := aosip_walleye
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 2
 TARGET_MANUFACTURER := Google

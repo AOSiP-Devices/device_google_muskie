@@ -27,7 +27,7 @@ ifdef DEVICE_PACKAGE_OVERLAYS
 $(warning Overlays defined in '$(DEVICE_PACKAGE_OVERLAYS)' will override '$(PRODUCT_HARDWARE)' overlays)
 endif
 DEVICE_PACKAGE_OVERLAYS += device/google/muskie/walleye/overlay
-DEVICE_PACKAGE_OVERLAYS += device/google/muskie/walleye/overlay-xos
+DEVICE_PACKAGE_OVERLAYS += device/google/muskie/walleye/overlay-aosip
 
 include device/google/muskie/device-common.mk
 
