@@ -34,4 +34,4 @@ BOARD_LISA_TARGET_SCRIPTS := device/google/wahoo/lisa/
 # for all future devices.
 BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=3
 
-TARGET_KERNEL_CONFIG := flash-walleye_defconfig
+TARGET_KERNEL_CONFIG := flash_defconfig
