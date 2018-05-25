@@ -1,3 +1,11 @@
+# Perf
+bin/iperf3
+lib/iperf.so
+lib64/iperf.so
+
+# Netutils
+bin/netutils-wrapper-1.0
+
 # Camera
 etc/permissions/com.google.android.camera.experimental2017.xml
 -framework/com.google.android.camera.experimental2017.jar
