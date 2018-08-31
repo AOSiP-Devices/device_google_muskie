@@ -23,9 +23,9 @@ DEVICE=walleye
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-XOS_ROOT="$MY_DIR"/../../..
+AOSIP_ROOT="$MY_DIR"/../../..
 
-HELPER="$XOS_ROOT"/vendor/xos/build/tools/extract_utils.sh
+HELPER="$AOSIP_ROOT"/vendor/aosip/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -54,7 +54,7 @@ if [ -z "$SRC" ]; then
 fi
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$XOS_ROOT" false "$CLEAN_VENDOR"
+setup_vendor "$DEVICE" "$VENDOR" "$AOSIP_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/lineage-proprietary-files.txt "$SRC"
 
